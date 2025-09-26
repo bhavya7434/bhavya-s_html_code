@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <form action="#" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Login</legend>
+            <label for="u">User Name</label>
+            <input type="text" name="uname" id="u" placeholder="Enter Your Name" minlength="2" maxlength="20" required autofocus autocomplete="on">
+            <br><br>
+            <label for="p">Password</label>
+            <input type="password" name="Password" id="p" placeholder="Enter Password">
+            <br><br>
+            <label for="e">Email</label>
+            <input type="email" name="e">
+            <br><br>
+            <label for="pn">Phone Number</label>
+            <input type="phone" name="p-n" max="10">
+            <br><br>
+            <label for="g">Gender</label>
+            <br>
+            <label>
+                <input type="radio" name="Gender" value="Male">Male
+            </label>
+            <label>
+                <input type="radio" name="Gender" value="Female">Female
+            </label>
+            <br><br>
+            <label for="h">Hobbies</label>
+            <br>
+            <input type="checkbox" name="Hobbies" value="Travelling">Travelling
+            <input type="checkbox" name="Hobbies" value="Riding">Riding
+            <input type="checkbox" name="Hobbies" value="Tracking">Tracking
+            <input type="checkbox" name="Hobbies" value="Sports">Sports
+            <br><br>
+            Date Of Birth <input type="date" name="Birth Date" min="2025-10-25" max="2025-12-31">
+            <br><br>
+            Age <input type="number" name="Age" min="1" max="100" step="1">
+            <br><br>
+            Favourite Color <input type="text" name="Favourite color" value="#ffaysgfu">
+            <br><br>
+            Browser <input list="browsers" name="browser">
+                <datalist id="browsers">
+                     <option value="Chrom"></option>
+                     <option value="Edge"></option>
+                </datalist>
+            <br><br>
+            Select Branch <select>
+                <option>CE</option>
+                <option>CSE</option>
+                <option>IT</option>
+                <option>Civil</option>
+            </select>
+            <br><br>
+            <select name="Branch">
+                <option value="Branch" selected disabled>----Select Branch</option>
+                <optgroup label="Computer">
+                    <option value="CE">CE</option>
+                    <option value="IT">IT</option>
+                </optgroup>
+                <optgroup value="Other">
+                    <option value="Civil">Civil</option>
+                    <option value="EC">EC</option>
+                </optgroup>
+            </select>
+            <br><br>
+            Message <textarea name="msg" cols="20" rows="2" placeholder="Enter Your Message"></textarea>
+            <br>
+            <input type="range" name="volums" min="5" max="100" step="1">
+            <br><br>
+            <input type="submit" value="submitted">
+            <input type="reset">
+            <input type="button" value="Click me">
+            <button>Click</button>
+        </fieldset>
+    </form>
+    <br><br>
+
+    <!-- File Upload -->
+    <form action="#" method="post" enctype="multipart/form-data">
+        <input type="file" accept=".pdf,doc" name="Upload" multiple>
+    </form>
+    <br><br><br>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <Legend>Sign UP</Legend>
+            <label for="u">User Name</label>
+            <input type="text" minlength="3" max="20" placeholder="Enter Your User Name" id="u" name="user">
+            <br><br>
+            <label for="p">Password</label>
+            <input type="password" placeholder="Enter Your Password">
+            <br><br>
+            Birth Date <input type="date">
+            <br><br>
+            Contact Number <input type="number" max="10">
+            <br><br>
+            Email Id <input type="email">
+            <br><br>
+            Gender <br>
+            <input type="radio" name="Gender" value="Male" checked>Male
+            <input type="radio" name="Gender" value="Female">Female
+            <input type="radio" name="Gender" value="Other">Other
+            <br><br>
+            semester <input type="number">
+            <br><br>
+            Age <input type="range" name="volume" min="5" max="100" step="1">
+            <br><br>
+            Your Age <input type="number" step="1">
+            <br><br>
+            Location <select name="Location">
+                <option value="Location" selected disabled>----Select City----</option>
+                <optgroup>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Rajkot">Rajkot</option>
+                <option value="Surat">Surat</option>
+                <option value="Vadodara">Vadodara</option>
+                </optgroup>
+            </select>
+            <br><br>
+            Area Of Interest 
+            <input type="checkbox" value="Java">Java
+            <input type="checkbox" value="Python">Python
+            <input type="checkbox" value="Full stack" checked>Full Stack
+            <br><br>
+        Address <textarea name="Address" placeholder="Enter Your Address"></textarea>
+        <br><br>
+        <input type="file" accept=".pdf,doc" name="Upload" multiple>
+        <br><br>
+        <input type="Submit">
+        <input type="Reset">
+         </fieldset>
+    </form>
+</body>
+</html>
